@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{  
+    background-color: #EEEEEE;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='100%25' height='100%25'%3E%3Cdefs%3E%3Cpattern id='p' width='100' height='100' patternUnits='userSpaceOnUse' patternTransform='rotate(45) scale(0.38)'%3E%3Cpath id='a' data-color='fill' fill='%23FFFFFF' stroke='%23FFFFFF' stroke-width='30' d='M50 100L0 50V0l50 50 50-50h0v50l-50 50z'%3E%3C/path%3E%3Cuse xlink:href='%23a' y='-100'%3E%3C/use%3E%3Cuse xlink:href='%23a' y='100'%3E%3C/use%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23p)' width='100%25' height='100%25'%3E%3C/rect%3E%3C/svg%3E");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+}
+
+.App {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.App-header-img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.App-header {
+    background-color: #f8f8f8;
+    width: 300px;
+    margin: 0 20px;
+    height: 525px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 8px 9px 12px 0px rgba(0, 0, 0, 0.2);
+
+    transition: all 1000ms;
+}
+
+.App-header.posted {
+    height: 206px;
+}
+
+.App-header-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.App-header-form-label {
+    display: flex;
+    flex-direction: column;
+    color: #666;
+}
+
+.App-header-form-input {
+    height: 20px;
+    padding: 4px;
+    font-size: 16px;
+    margin-bottom: 20px ;
+    border-radius: 8px;
+    border: 1px solid #bbb;
+    color: #666;
+}
+
+.App-header-form-input:focus-visible {
+    outline: 1px solid #666;
+    border-color: transparent;
+}
+
+.App-header-form-btn {
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid #38b8a1;
+    background-color: #38b8a1;
+    transition: all 500ms;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    width: 150px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.2);
+}
+
+.App-header-form-btn:hover {
+    background-color: #38b8a190;
+}
+
+.App-header-form-text-ok,
+.App-header-form-tt-ok {
+    color: #666;
+    text-align: center;
+}
